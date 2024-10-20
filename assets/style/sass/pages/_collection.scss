@@ -1,0 +1,31 @@
+.collection {
+  height: 500px;
+  margin: 20px 30px;
+  @include border;
+}
+.collection-header {
+  @include flex;
+  justify-content: space-between;
+}
+.collection-items {
+  @include flex;
+  margin-top: 60px;
+  gap: 20px;
+}
+.collection-item {
+  border-radius: 10px;
+  @include border;
+  width: 446px;
+  height: 260px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+.collection-next {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+}
